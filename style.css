@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very_Dark_Blue: hsl(234, 12%, 34%);
+  --Grayish_Blue: hsl(229, 6%, 66%);
+  --Very_Light_Gray: hsl(0, 0%, 98%);
+}
+
+section {
+  padding: 50px 30px;
+  background-color: var(--Very_Light_Gray);
+}
+
+.container h2 {
+  font-size: 23px;
+  font-weight: normal;
+  text-align: center;
+  color: var(--Very_Dark_Blue);
+}
+
+.container h3 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--Very_Dark_Blue);
+  margin-bottom: 20px;
+}
+.container p {
+  color: var(--Very_Dark_Blue);
+  text-align: center;
+}
+.container-items {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+}
+.supervisor {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background-color: #fff;
+  margin: 10px 0;
+  box-shadow: -5px 6px 53px -15px rgba(138, 138, 138, 0.59);
+  -webkit-box-shadow: -5px 6px 53px -15px rgba(138, 138, 138, 0.59);
+  -moz-box-shadow: -5px 6px 53px -15px rgba(138, 138, 138, 0.59);
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  padding: 20px;
+  border-top-style: solid;
+  border-top-color: var(--Cyan);
+}
+
+.team-builder {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background-color: #fff;
+  margin: 10px 0;
+  box-shadow: -5px 6px 53px -15px rgba(138, 138, 138, 0.59);
+  -webkit-box-shadow: -5px 6px 53px -15px rgba(138, 138, 138, 0.59);
+  -moz-box-shadow: -5px 6px 53px -15px rgba(138, 138, 138, 0.59);
+  border-radius: 7px;
+  padding: 20px;
+  border-top-style: solid;
+  border-top-color: var(--Red);
+}
+.karma {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background-color: #fff;
+  margin: 10px 0;
+  box-shadow: -5px 6px 53px -15px rgba(138, 138, 138, 0.59);
+  -webkit-box-shadow: -5px 6px 53px -15px rgba(138, 138, 138, 0.59);
+  -moz-box-shadow: -5px 6px 53px -15px rgba(138, 138, 138, 0.59);
+  border-radius: 7px;
+  padding: 20px;
+  border-top-style: solid;
+  border-top-color: var(--Orange);
+}
+.calculator {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background-color: #fff;
+  margin: 10px 0;
+  box-shadow: -5px 6px 53px -15px rgba(138, 138, 138, 0.59);
+  -webkit-box-shadow: -5px 6px 53px -15px rgba(138, 138, 138, 0.59);
+  -moz-box-shadow: -5px 6px 53px -15px rgba(138, 138, 138, 0.59);
+  border-radius: 7px;
+  padding: 20px;
+  border-top-style: solid;
+  border-top-color: var(--Blue);
+}
+
+.supervisor h1,
+.team-builder h1,
+.karma h1,
+.calculator h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--Very_Dark_Blue);
+  margin: 10px 0;
+}
+
+.supervisor p,
+.team-builder p,
+.karma p,
+.calculator p {
+  text-align: left;
+  font-size: 14px;
+}
+
+img {
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+}
+
+.attribution {
+  text-align: center;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1440px) {
+  section {
+    padding: 100px 100px 10px;
+    height: 100vh;
+  }
+
+  .container h2 {
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  .container h3 {
+    font-size: 32px;
+  }
+  .container p {
+    padding: 0 150px;
+    font-size: 15px;
+  }
+  .container-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* padding: 50px 20px; */
+    max-width: 1300px;
+    margin: auto;
+  }
+  .supervisor {
+    width: 350px;
+    height: 250px;
+  }
+
+  .team-builder {
+    width: 350px;
+    height: 250px;
+  }
+  .karma {
+    width: 350px;
+    height: 250px;
+  }
+  .calculator {
+    width: 350px;
+    height: 250px;
+  }
+
+  .supervisor h1,
+  .team-builder h1,
+  .karma h1,
+  .calculator h1 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .supervisor p,
+  .team-builder p,
+  .karma p,
+  .calculator p {
+    font-size: 14px;
+    padding: 0;
+  }
+  .supervisor-container {
+    position: absolute;
+    top: 20vh;
+    left: 5vw;
+  }
+
+  .calculator-container {
+    position: absolute;
+    top: 20vh;
+    right: 5vw;
+  }
+}
